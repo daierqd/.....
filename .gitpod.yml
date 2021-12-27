@@ -1,0 +1,18 @@
+
+tasks:
+  - name: "安装依赖的包"
+    command: |
+      pip install -U pip
+      pip install -r requrements.txt
+      exit
+
+
+# List the ports to expose. Learn more https://www.gitpod.io/docs/config-ports/
+ports:
+  - port: 3000
+    onOpen: open-preview
+
+vscode:
+  extensions:
+    - ms-python.python
+    - ms-toolsai.jupyter
